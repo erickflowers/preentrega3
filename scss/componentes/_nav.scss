@@ -1,0 +1,62 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: $color1;
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img {
+      width: 15%;
+    }
+
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  .menu {
+    justify-self: end;
+    display: flex;
+    flex-flow: row wrap;
+
+    .opciones {
+      li {
+        float: left;
+        padding: 25px;
+
+        &:hover {
+          background: $color3;
+        }
+
+        a {
+          color: $color2;
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 15px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      justify-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

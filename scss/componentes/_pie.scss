@@ -1,0 +1,48 @@
+.pie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: $color4;
+  text-align: center;
+  padding: 2% 0;
+
+  h4 {
+    padding: 15px;
+  }
+
+  img {
+    width: 32px;
+  }
+
+  .menu-pie {
+    justify-self: center;
+
+    .opciones-pie {
+      li {
+        float: left;
+        padding: 15px;
+
+        a {
+          color: $color6;
+
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+
+        &:hover {
+          background: $color5;
+        }
+
+        @media screen and (max-width: 768px) {
+          float: left;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+.descripcion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    gap: 20px;
+
+    img{
+        justify-self: end;
+    }
+
+    div{
+        h3{
+            color: $colorFuente;
+            padding-bottom: 2%;
+        }
+
+        ul {
+            color: $colorFuente;
+            li{
+                padding: 1%;
+            }
+        }
+    }
+}
